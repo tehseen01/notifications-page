@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main>
+      <div class="notification-header">
+        <div>
+          <h1>Notifications</h1>
+          <span class="notification-count">3</span>
+        </div>
+        <p class="mark-as-read">Mark all as read</p>
+      </div>
+
+      <div class="notification-card" data-unread="true">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-mark-webber.webp"
+          alt="Mark Webber"
+        />
+        <div class="card-message">
+          <a href="#" class="username"> Mark Webber</a>
+          reacted to your recent post
+          <a href="#" class="notification-type">My first tournament today!</a>
+          <span class="dot"></span>
+          <span class="time">1m ago</span>
+        </div>
+      </div>
+
+      <div class="notification-card" data-unread="true">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-angela-gray.webp"
+          alt="Angela Gray"
+        />
+        <div class="card-message">
+          <a href="#" class="username">Angela Gray</a>
+          followed you <span class="dot"></span>
+          <span class="time">5m ago</span>
+        </div>
+      </div>
+
+      <div class="notification-card" data-unread="true">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-jacob-thompson.webp"
+          alt="Jacob Thompson"
+        />
+        <div class="card-message">
+          <a href="#" class="username">Jacob Thompson</a>
+          has joined your group
+          <a href="#" class="notification-group">Chess Club</a>
+          <span class="dot"></span>
+          <span class="time">1 day ago</span>
+        </div>
+      </div>
+
+      <div class="notification-card flex-start">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-rizky-hasanuddin.webp"
+          alt="Rizky Hasanuddin"
+        />
+        <div class="card-message">
+          <a href="#" class="username">Rizky Hasanuddin</a>
+          sent you a private message
+          <span class="time">5 days ago</span>
+          <p class="message">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+      </div>
+
+      <div class="notification-card">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-kimberly-smith.webp"
+          alt="Kimberly Smith"
+        />
+        <div class="card-message">
+          <a href="#" class="username">Kimberly Smith</a>
+          commented on your picture
+          <span class="time">1 week ago</span>
+        </div>
+      </div>
+
+      <div class="notification-card">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-nathan-peterson.webp"
+          alt="Nathan Peterson"
+        />
+        <div class="card-message">
+          <a href="#" class="username">Nathan Peterson</a>
+          reacted to your recent post
+          <a href="#" class="notification-type"
+            >5 end-game strategies to increase your win rate</a
+          >
+          <span class="time">2 weeks ago</span>
+        </div>
+      </div>
+
+      <div class="notification-card">
+        <img
+          class="user-img"
+          src="./assets/images/avatar-anna-kim.webp"
+          alt=""
+        />
+        <div class="card-message">
+          <a href="#" class="username">Anna Kim</a>
+          left the group<a href="#" class="notification-group">Chess Club</a>
+          <span class="time">2 weeks ago</span>
+        </div>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+}
+
+/* ===========
+----RESET-----
+============== */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+img,
+picture,
+svg,
+video {
+  width: 20%;
+  display: block;
+}
+
+/* ==================
+----MOBILE FIRST-----
+===================== */
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: var(--Light-grayish-blue-2);
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  background: var(--White);
+  padding: 1rem;
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.notification-header h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.notification-header div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.notification-count {
+  background: var(--Blue);
+  color: var(--White);
+  padding: 0.2rem 0.8rem;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+.mark-as-read {
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: var(--Dark-grayish-blue);
+}
+
+.mark-as-read:hover {
+  color: var(--Blue);
+}
+
+.notification-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+div[data-unread="true"] {
+  background: var(--Light-grayish-blue-1);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.card-message {
+  color: var(--Grayish-blue);
+}
+
+.notification-card[data-unread="true"] .dot {
+  background: var(--Red);
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.2rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.message {
+  border: 1px solid var(--Grayish-blue);
+  border-radius: 5px;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.message:hover {
+  background: var(--Light-grayish-blue-2);
+  border: 1px solid var(--White);
+}
+
+.time {
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.username {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+  margin-right: 0.2rem;
+}
+a:hover {
+  color: var(--Blue);
+}
+
+.notification-type {
+  font-weight: 800;
+  color: var(--Dark-grayish-blue);
+  margin-left: 0.2rem;
+}
+
+.notification-group {
+  font-weight: 800;
+  color: var(--Blue);
+}
+
+/* =============
+----DESKTOP-----
+================ */
+
+@media (min-width: 768px) {
+  main {
+    max-width: 41rem;
+    border-radius: 10px;
+  }
+  img {
+    width: 10%;
+  }
+}
